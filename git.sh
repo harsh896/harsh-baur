@@ -1,6 +1,8 @@
-git add .
 echo -e "\e[1;31mAdding all files"
-git commit -m "commit changes"
+git add .
 echo -e "\e[1;33mCommiting git"
-git push origin master
+git commit -m "commit changes"
 echo -e "\e[1;32mPushing to git repo"
+git push origin master
+echo -e "\e[1;36mStatus of the git repo"
+git status
