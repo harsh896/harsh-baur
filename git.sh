@@ -1,6 +1,6 @@
 git add .
-echo "Adding all files"
+echo "\[\033[1;31m\] Adding all files"
 git commit -m "commit changes"
-echo "Commiting git"
+echo "\[\033[1;33m\] Commiting git"
 git push origin master
-echo "Pushing to git repo"
+echo "\[\033[1;32m\] Pushing to git repo"
