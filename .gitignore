@@ -1,0 +1,7 @@
+# vim temp and swap files
+*~
+*.swp
+*.swo
+
+dist/
+*.o
