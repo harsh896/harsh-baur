@@ -1,11 +1,11 @@
 
 # Name of the application
-name = "shell"
+name = "hello-py"
 
 [Build]
 
   # Command to build the application, valid variables: $ROOT, $APPNAME
-  command = "sh shell.sh"
+  command = "python hello.py"
 
   # Repository relative paths to baur include files that the build inherits.
   # Valid variables: $ROOT
@@ -16,11 +16,8 @@ name = "shell"
 
     [Build.Input.Files]
     # Valid variables: $ROOT
-    paths = [".app.toml"]
+    paths = ["hello.py"]
 
-    [Build.Input.GitFiles]
-    # Valid variables: $ROOT
-    paths = ["shell.sh"]
 
   # Specification of build outputs produced by the [Build.command]
   [Build.Output]
@@ -30,7 +27,7 @@ name = "shell"
     [[Build.Output.File]]
 
     # Path relative to the application directory, valid variables: $APPNAME
-    path = "dist/shell"
+    path = "output/python.txt"
 
      # Copy the file to a local directory
     [Build.Output.File.FileCopy]

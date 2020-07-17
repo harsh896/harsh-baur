@@ -3,16 +3,11 @@
 set -eu -o pipefail
 
 PSQL_PORT=5433
-REGISTRY_PORT="5000"
 
 if ! command -v; then
 	echo "docker is not installed"
 	exit 1
 fi
-
-docker run -d --rm -p 127.0.0.1:$REGISTRY_PORT:5000 --name docker-registry registry:2
-echo "Started docker registry container on port $REGISTRY_PORT"
-
 
 docker run \
 	-d \
