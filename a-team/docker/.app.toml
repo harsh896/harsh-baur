@@ -1,0 +1,20 @@
+# Name of the application
+name = "docker-hello"
+
+[Build]
+
+  # Command to build the application, valid variables: $ROOT, $APPNAME
+  command = "docker build --iidfile .container.id ."
+
+  # Specification of build inputs like source files, Makefiles, etc
+  [Build.Input]
+
+    # Inputs specified by path, matching only Git tracked files
+    [Build.Input.Files]
+
+      # Relative paths to source files.
+      # Only files tracked by Git that are not in the .gitignore file are matched.
+      # The same patterns that git ls-files supports can be used.
+      # Valid variables: $ROOT
+      paths = ["Dockerfile"]
+

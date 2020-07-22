@@ -14,7 +14,7 @@ name = "hello-py"
   # Specification of build inputs like source files, Makefiles, etc
   [Build.Input]
 
-    [Build.Input.Files]
+    [Build.Input.GitFiles]
     # Valid variables: $ROOT
     paths = ["hello.py"]
 
